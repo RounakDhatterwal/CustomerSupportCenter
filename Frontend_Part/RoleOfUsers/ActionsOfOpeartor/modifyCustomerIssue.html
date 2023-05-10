@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modifyCustomerIssue.css">
+    <title>ModifyCustomerIssue</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="nav-menu" >
+        <div class="project_logo">
+            <img src="../../Images/Customer Support2.png" alt="">
+            <h1>SUPPORT CENTER</h1>
+        </div>
+           
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <!-- <a href="#home"> <img id="logo"  src="./Images/logo.avif" alt=""></a> -->
+            <a href="./adminLogin.html"  >Admin Login</a >
+            <a href="./operatorLogin.html" >Operator Login</a >
+            <a href="./consumerLogin.html"  >Consumer Login</a >
+
+        </nav>    
+               
+         <!-- <li><button id="resume-button-1" onclick="resume()"><a id="resume-link-1" class="nav-link resume" href="./Image/Suryakant-Singh-Resume.pdf" download="Suryakant_Singh_Resume" target="_blank">Resume</a></button></li>
+
+         <a href="javascript:void(0);" class="icon" onclick="myfunction()"> ☰ </a> -->
+    </div>
+
+    <!-- Menu -->
+    
+    <div id="menu" class="menu">
+        <div>
+            <h2>Enter Issue Details :</h2>
+        </div>
+        <div>
+            <form action="#">
+                <label for="issueType">Issue Type<span>*</span> :</label>
+                <input id="issueType" type="text" placeholder="Enter Issue Type" required>
+                <label for="issueDesc">Issue Description<span>*</span> :</label>
+                <input id="issueDesc" type="text" placeholder="Enter Issue Description" required>
+                <label for="issueStatus">Issue Status<span>*</span> :</label>
+                <select name="status" id="issueStatus" required>
+                    <option value="">--Select Status--</option>
+                    <option value="pending">Pending</option>
+                    <option value="closed">Closed</option>
+                </select>  
+            </form>
+            <a href="#"><button>Modify</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
